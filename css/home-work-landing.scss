@@ -72,7 +72,7 @@ img {
         background-color: $violet-primary;
 
         &:hover {
-            background-color: darken($violet-primary, 10%);
+            background-color: $violet-light;
         }
     }
 
@@ -340,6 +340,7 @@ img {
         &::after {
             content: '';
             position: absolute;
+            z-index: -1;
         }
 
         &::before {
@@ -960,6 +961,15 @@ img {
 
         &__button-watch {
             margin-top: 2.4rem;
+            transition: 0.2 ease-in-out;
+
+            &:hover {
+                color: $violet-dark;
+
+                svg path {
+                    fill: $violet-dark;
+                }
+            }
         }
     }
 
@@ -1029,6 +1039,16 @@ img {
 
         &__slide-link {
             margin-top: 2.4rem;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                color: $violet-dark;
+
+                svg path {
+                    fill: $violet-dark;
+                }
+            }
+
         }
     }
 
@@ -1093,6 +1113,26 @@ img {
         &__socials,
         &__btn-store {
             margin-top: 0;
+        }
+
+        &__link {
+            transition: color 0.2s ease-in-out;
+
+            &:hover {
+                color: $blue-gray;
+            }
+        }
+
+        &__social-link {
+            svg path {
+                transition: fill 0.2s ease-in-out;
+            }
+
+            &:hover {
+                svg path {
+                    fill: $blue-gray;
+                }
+            }
         }
     }
 
