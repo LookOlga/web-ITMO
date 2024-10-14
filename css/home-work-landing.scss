@@ -363,6 +363,7 @@ img {
 
 .features {
     padding: 4.8rem 0;
+    border-top: 1px solid $blue-gray-extra-light;
 
     &__item {
         margin-bottom: 3.2rem;
@@ -479,11 +480,12 @@ img {
 
     &__slide-img {
         width: 100%;
+        object-fit: cover;
     }
 
     &__slide-desc {
         position: relative;
-        max-width: 93%;
+        max-width: 90%;
         background-color: $white-primary;
         box-shadow: 0px 0px 10px 0px #00000012,
             0px 20px 25px -5px #0000001A;
@@ -498,6 +500,8 @@ img {
     }
 
     &__slide-text {
+        font-size: 1.8rem;
+        line-height: 160%;
         display: -webkit-box;
         -webkit-line-clamp: 5;
         -webkit-box-orient: vertical;
@@ -974,6 +978,8 @@ img {
     }
 
     .features {
+        padding: 8rem 0;
+
         &__list {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -1015,9 +1021,19 @@ img {
     }
 
     .stories {
+        &__slider {
+            margin-top: 8rem;
+        }
+
         &__slide {
             display: flex;
             align-items: center;
+        }
+
+        &__slide-img {
+            max-width: 68rem;
+            max-height: 41.2rem;
+            height: 100%;
         }
 
         &__slide-img,
@@ -1058,6 +1074,8 @@ img {
         &__img {
             &--desktop {
                 display: block;
+                max-width: 55.2rem;
+                object-fit: cover;
             }
 
             &--mobile {
