@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.colors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 120px;
+}
+
+.blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.color {
+    width: 40px;
+    height: 40px;
+}
+
+.color[data-color="green"] {
+    background-color: green;
+}
+
+.color[data-color="red"] {
+    background-color: red;
+}
+
+.color[data-color="yellow"] {
+    background-color: yellow;
+}
+
+.color[data-color="blue"] {
+    background-color: blue;
+}
+
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+}
